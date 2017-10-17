@@ -1,9 +1,52 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
-title = "My new Victor-Hugo site"
+languageCode = "fr-FR"
+languageLang = "fr"
+theme = "portfolio"
+title = "CDESIGN"
 
 # RSS, categories and tags disabled for an easy start
-# See configuration options for more details: 
+# See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "Cabinet d'architecture"
+  copyright = "&copy;2017 CDESIGN Architectes"
+  sidebarAbout = [
+    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
+    "Originally from Toronto, currently based in London."
+  ]
+  # Contact page
+     # Since this template is static, the contact form uses www.formspree.io as a
+     # proxy. The form makes a POST request to their servers to send the actual
+     # email. Visitors can send up to a 1000 emails each month for free.
+     #
+     # What you need to do for the setup?
+     #
+     # - set your email address under 'email' below
+     # - upload the generated site to your server
+     # - send a dummy email yourself to confirm your account
+     # - click the confirm link in the email from www.formspree.io
+     # - you're done. Happy mailing!
+  email = "contact@cdesignarchitectes.fr"
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Accueil"
+  url = ""
+
+  [[params.navlinks]]
+  name = "Notre agence"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "Contact"
+  url = "contact/"
+
+  [params.social]
+  facebook      = "https://www.facebook.com/cdesignarchi"
+  email         = "contact@cdesignarchitectes.fr"
+  instagram     = "https://www.instagram.com/cdesign.architecte/"
